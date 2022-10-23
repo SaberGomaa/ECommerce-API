@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ECommerce.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ECommerce_API.Models
 {
@@ -14,7 +15,12 @@ namespace ECommerce_API.Models
             base.OnConfiguring(optionsBuilder);
         }
 
+        public DbSet<customer> customers { get; set; }
+        public DbSet<admin> admins { get; set; }
+        public DbSet<Order> orders { get; set; }
+        public DbSet<Cart> carts { get; set; }
         public DbSet<Products> products { get; set; }
+        public DbSet<contact> contacts { get; set; }
 
     }
 }
