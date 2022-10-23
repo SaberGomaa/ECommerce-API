@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECommerce_API.Migrations
 {
     [DbContext(typeof(myContext))]
-    [Migration("20221022185652_create")]
+    [Migration("20221023175553_create")]
     partial class create
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
